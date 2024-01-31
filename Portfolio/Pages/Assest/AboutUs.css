@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Ḥeader */
+
+.bg-img {
+  min-height: 80vh;
+  width: 100%;
+  background: url("../Images/group-people-working-out-business-plan-office\ 1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.bg-grdient {
+  min-height: 80vh;
+  width: 100%;
+  background: url("../Images/Rectangle\ 71.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.nav-menu {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+  /* backdrop-filter: blur(30px); */
+  transition: all 0.5s linear;
+}
+
+.scrollActive {
+  background-color: #2363ad;
+}
+
+.logo {
+  margin-left: 30px;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-list {
+  display: flex;
+  width: 600px;
+  margin-bottom: 0;
+  padding-left: 0;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.nav-list li {
+  list-style: none;
+  font-size: 18px;
+  transition: 0.3s linear;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list li:hover {
+  border-bottom: 2px solid #fff;
+  scale: 1.05;
+}
+
+.nav-list li.active a {
+  border-bottom: 3px solid #fff;
+  scale: 1.2;
+}
+
+/*  */
+
+/* main body */
+/* section1 */
+
+.section1 {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.section1 h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.inner-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img1 img {
+  width: 130px;
+  transform: 0 -200px;
+}
+
+.img2 img {
+  width: 130px;
+  transform: 0 -200px;
+}
+
+.section-card {
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card1,
+.card2 {
+  width: 350px;
+  height: 350px;
+}
+
+.card1 {
+  background-image: url("../Images/designer-work-office\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.card2 {
+  background-image: url("../Images/close-up-idea-concept\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.inner-crd1 {
+  background-image: url("../Images/Rectangle\ 17.png");
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.inner-crd1 > h4,
+.inner-crd2 > h4 {
+  margin-bottom: 30px !important;
+}
+
+.inner-crd2 {
+  background-image: url("../Images/Rectangle\ 17.png");
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Section 2 */
+
+.section2 {
+  background-image: url("../Images/aerial-view-business-team\ 1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+}
+
+.inner-section2 {
+  background-image: url("../Images/Rectangle\ 19.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section {
+  width: 80%;
+}
+
+.content-section > h1 {
+  font-size: 46px;
+  margin-bottom: 2%;
+  width: 60%;
+}
+
+.content-section > p {
+  width: 60%;
+  font-size: 22px;
+}
+
+/* section3 */
+
+.section3 {
+  width: 100%;
+  min-height: 400px;
+  height: 90vh;
+  background: url("../Images/Rectangle\ 19.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.servicebox-4,
+.servicebox-5,
+.servicebox-6 {
+  width: 325px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid #337ccf;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.servicebox-4:hover .card-body4,
+.servicebox-5:hover .card-body5,
+.servicebox-6:hover .card-body6 {
+  right: 0;
+}
+
+.card-img4,
+.card-img5,
+.card-img6 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card-body4,
+.card-body5,
+.card-body6 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -60%;
+  background: #1f3d4738;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  border-radius: 6px;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s linear;
+}
+
+.card-title4,
+.card-title5,
+.card-title6 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.card-subtitle4,
+.card-subtitle5,
+.card-subtitle6 {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card-info4,
+.card-info5,
+.card-info6 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 15px 0;
+  line-height: 25px;
+}
+
+.card-btn4,
+.card-btn5,
+.card-btn6 {
+  color: #fff;
+  background-color: #337ccf;
+  padding: 8px 15px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: 120px;
+}
+
+/* section4 */
+
+.section4 {
+  background-image: url("../Images/optical-lens-technology-background-purple-blue-gradient\ 1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 600px;
+}
+
+.inner-section4 {
+  background-image: url("../Images/Rectangle\ 19.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.content-section1 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content-section1 > h1 {
+  font-size: 46px;
+  margin-bottom: 2%;
+  width: 60%;
+}
+
+.content-section1 > p {
+  width: 60%;
+  font-size: 22px;
+}
+
+/* section 5 */
+.fold3 {
+  display: flex;
+  justify-content: space-around;
+  min-height: 500px;
+  align-items: center;
+}
+
+.fold3col1 {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fold3col1 h2 {
+  font-weight: 700;
+  border-bottom: 3px solid #000000;
+}
+
+.colum1,
+.colum2,
+.colum3 {
+  display: flex;
+  width: 425px;
+  gap: 20px;
+}
+
+.contact-icon1,
+.contact-icon2,
+.contact-icon3 {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #337ccf;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s linear;
+}
+
+.contact-icon1:hover,
+.contact-icon2:hover,
+.contact-icon3:hover {
+  scale: 1.1;
+}
+
+.contact-icon1 i,
+.contact-icon2 i,
+.contact-icon3 i {
+  font-size: 18px;
+}
+
+.contact-content1 .colContent,
+.contact-content2 .colContent,
+.contact-content3 .colContent {
+  color: #337ccf;
+  cursor: pointer;
+}
+
+.contact-content1 h4,
+.contact-content2 h4,
+.contact-content3 h4 {
+  font-weight: 700;
+}
+
+.contacForm {
+  width: 400px;
+  height: 425px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #091e3e;
+  border-radius: 12px;
+}
+
+#full-name,
+#user-email,
+#user-message {
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 3px solid #337ccf;
+}
+
+#user-message {
+  height: 150px;
+}
+
+.butn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#request-quote {
+  width: 300px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#request-quote:hover {
+  background-color: #337ccf;
+}
+
+/* section6 */
+
+.socialPlatforms {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  background: aliceblue;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid #337ccf;
+}
+
+.socialPlatforms img {
+  width: 30px;
+}
+
+.fold4 {
+  height: 90px;
+  background-color: #091e3e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}

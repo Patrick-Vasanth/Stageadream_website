@@ -24,13 +24,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // scroll to give navbar background
 
-$(document).ready(function () {
-  $(window).bind("scroll", function () {
-    var gap = 75;
-    if ($(window).scrollTop() > gap) {
-      $(".nav-menu").addClass("scrollActive");
+document.addEventListener("DOMContentLoaded", function () {
+  var gap = 65;
+  var navMenu = document.querySelector(".nav-menu");
+
+  function handleScroll() {
+    if (window.scrollY > gap) {
+      navMenu.classList.add("scrollActive");
     } else {
-      $(".nav-menu").removeClass("scrollActive");
+      navMenu.classList.remove("scrollActive");
     }
-  });
+  }
+
+  // Initial check in case the page is already scrolled
+  handleScroll();
+
+  window.addEventListener("scroll", handleScroll);
 });
+
+// burger menu
+
+let showSidebar = () => {
+  const sidebar = document.querySelector(".sideBar");
+  sidebar.style.display = "flex";
+  sidebar.style.opacity = "1";
+};
+
+let hideSidebar = () => {
+  const sidebar = document.querySelector(".sideBar");
+  sidebar.style.opacity = "0";
+  setTimeout(() => {
+    sidebar.style.display = "none";
+  }, 500);
+};

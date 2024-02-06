@@ -57,3 +57,12 @@ let hideSidebar = () => {
     sidebar.style.display = "none";
   }, 500);
 };
+
+// hide sidebar when click contactus in sidebar
+
+let hideBar = () => {
+  const sidebar = document.querySelector(".sideBar");
+  setTimeout(() => {
+    sidebar.style.display = "none";
+  }, 500);
+};

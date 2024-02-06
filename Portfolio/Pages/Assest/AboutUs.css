@@ -50,20 +50,20 @@
 /* Ḥeader */
 
 .bg-img {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   background: url("../Images/group-people-working-out-business-plan-office\ 1.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .bg-grdient {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
-  background: url("../Images/Rectangle\ 71.png");
+  background: url("../Images/Rectangle\ 7.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -82,6 +82,19 @@
 
 .scrollActive {
   background-color: #2363ad;
+}
+.dream-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+}
+
+.dream-title h1 {
+  font-size: 36px;
 }
 
 /* .logo {
@@ -169,6 +182,7 @@
 .card2 {
   width: 350px;
   height: 350px;
+  border-radius: 12px;
 }
 
 .card1 {
@@ -185,23 +199,7 @@
   border-radius: 10px;
 }
 
-.inner-crd1 {
-  background-image: url("../Images/Rectangle\ 17.png");
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.inner-crd1 > h4,
-.inner-crd2 > h4 {
-  margin-bottom: 30px !important;
-}
-
+.inner-crd1,
 .inner-crd2 {
   background-image: url("../Images/Rectangle\ 17.png");
   width: 100%;
@@ -212,6 +210,12 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  border-radius: 12px;
+}
+
+.inner-crd1 > h4,
+.inner-crd2 > h4 {
+  margin-bottom: 30px !important;
 }
 
 /* Section 2 */
@@ -579,9 +583,17 @@ textarea:focus {
   margin-bottom: 10px;
 }
 
+.socialPlatforms img:hover {
+  scale: 1.05;
+}
+
 /* media query */
 
 @media screen and (max-width: 1024px) {
+  .dream-title h1 {
+    font-size: 32px;
+  }
+
   .nav-list {
     width: 450px;
   }
@@ -647,6 +659,10 @@ textarea:focus {
   .img1,
   .img2 {
     display: none;
+  }
+
+  .dream-title {
+    height: 500px !important;
   }
 
   .section-card {
@@ -728,12 +744,30 @@ textarea:focus {
     font-size: 22px;
     width: 400px;
   }
+
+  .dream-title h1 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 426px) {
-  .bg-img,
+  /* .bg-img,
   .bg-grdient {
     height: 50vh;
+  } */
+
+  .bg-img,
+  .bg-grdient {
+    height: 70vh !important;
+  }
+
+  .dream-title {
+    height: 500px !important;
+    padding: 10px;
+  }
+
+  .bg-img {
+    background-image: url("../Images/new2.png");
   }
 
   .burger-menu {
@@ -803,13 +837,17 @@ textarea:focus {
     width: 275px;
     padding: 10px;
   }
+
+  .dream-title h1 {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 376px) {
-  .bg-grdient,
+  /* .bg-grdient,
   .bg-img {
     height: 175px;
-  }
+  } */
 
   .contact-icon1,
   .contact-icon2,
@@ -849,10 +887,10 @@ textarea:focus {
 }
 
 @media screen and (max-width: 321px) {
-  .bg-grdient,
+  /* .bg-grdient,
   .bg-img {
     height: 150px;
-  }
+  } */
 
   .colum1,
   .colum2,
